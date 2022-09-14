@@ -22,7 +22,7 @@ const Movie = () => {
                 const movieName = Title.substring(0, 15);
 
                 const wathchlist = () => {
-                  localStorage.setItem("itemsID", JSON.stringify([imdbID]));
+                  localStorage.setItem("itemsID", JSON.stringify([...imdbID]));
                 };
 
                 return (

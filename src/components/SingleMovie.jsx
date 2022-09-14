@@ -14,12 +14,12 @@ const SingleMovie = () => {
       </section>
     );
   }
-
+  console.log(isError);
   return (
     <section className="movie-section">
       <div className="movie-card">
         <figure>
-          <img src={movie.Poster} alt="" />
+          <img src={movie.Poster} alt="dfgh" />
         </figure>
         <div className="card-content">
           <p className="title">{movie.Title}</p>
