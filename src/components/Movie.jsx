@@ -22,12 +22,12 @@ const Movie = () => {
                 const movieName = Title.substring(0, 15);
 
                 const wathchlist = () => {
-                  localStorage.setItem("itemsID", JSON.stringify(imdbID));
+                  localStorage.setItem("itemsID", JSON.stringify([imdbID]));
                 };
 
                 return (
                   <>
-                    <NavLink to={`movie/${imdbID}`} key={imdbID}>
+                    <NavLink onClick={wathchlist} to={`movie/${imdbID}`} key={imdbID} >
                       <div className="card">
                         <div className="card-info">
                           <h2>
