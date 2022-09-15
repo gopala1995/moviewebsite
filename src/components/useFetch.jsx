@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-
 // setting the api link
- export const API_URL = `http://www.omdbapi.com/?apikey=b0eb8560`;
+export const API_URL = `http://www.omdbapi.com/?apikey=b0eb8560`;
 
 const useFetch = (apiParams) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,7 +39,7 @@ const useFetch = (apiParams) => {
     };
   }, [apiParams]);
 
-  return { isLoading, isError, movie };
+  return { isLoading, movie, isError };
 };
 
 export default useFetch;
